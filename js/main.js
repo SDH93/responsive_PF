@@ -118,14 +118,17 @@ xhr3.send();
 
 
 //scroll
+let winW=$(window).width();
 let pos = { y:0, oy:0, status:true }
 
-window.onscroll = function(){        
+
+window.onscroll = function(){ 
+
   pos.y = window.scrollY;        //현재 스크롤값
   pos.status = pos.y > pos.oy;   //true일때는 아래로 스크롤 되고 있다는 의미
-  pos.oy = pos.y;                //이전 스크롤값
+  pos.oy = pos.y;                //이전 스크롤값    
 
-  if(pos.y > window.innerHeight - 100){
+  if( pos.y > window.innerHeight - 100){
     document.querySelector('.header_inner').style.background = ('rgba(255, 206, 50, 1)');
     document.querySelector('.header_inner').style.top = ('-35px');
     document.querySelector('.header_inner').style.borderBottom = ('3px dashed #009132');
@@ -135,6 +138,8 @@ window.onscroll = function(){
     document.querySelector('.header_inner').style.borderBottom = ('none');
   }
 }
+
+
 
 
 
@@ -211,7 +216,6 @@ elEvnetLink2.onclick = function(e){
 
 //manu slide slick
 
-winW=$(window).width();
 if(winW < 768){
   $('.menu_slick').slick();
 }

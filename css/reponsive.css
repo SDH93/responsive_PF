@@ -67,8 +67,13 @@
 }
 
 @media (max-width:900px){
+
+    header h1{
+        position: relative;
+        bottom: -30px;
+    }
     .header_inner{
-        height: 230px;
+        height: 150px;
         align-items: center;
     }
     .header_container{
@@ -77,6 +82,7 @@
     }
     .header_container ul {
         justify-content: end;
+        bottom: -10px;
     }
     main{
         margin-top: calc(100vh + 270px);
@@ -209,14 +215,20 @@
 }
 
 @media (max-width:500px){
-    h1{
+    header h1{
         text-align: center;
         font-size: 40px;
+        bottom: -20px;
+
     }
     .header_container li{
         padding: 5px;
         font-size: 16px;
         text-align: center;
+    }
+    .header_container ul {
+        justify-content: end;
+        bottom: -20px;
     }
 
     .header_container ul {
