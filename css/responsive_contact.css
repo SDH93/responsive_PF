@@ -1,5 +1,19 @@
 
 /* contact 반응형 */
+@media (max-height: 950px){
+    #contact {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+    .contact_inner {
+        height: calc(100vh - 150px - 200px);
+        min-height: 450px;
+        margin: 15px;
+    }
+}
+
 @media (max-width:1280px){
     .contact_inner .contact1 form li span{
         width: 80px;
@@ -96,8 +110,3 @@
 
 }
 
-@media (max-height: 1000px){
-    .contact_inner .contact1 form li:nth-of-type(3) textarea{
-        max-height: 12vh;
-    }
-}
