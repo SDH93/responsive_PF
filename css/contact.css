@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+
+.header_bg{
+    position: absolute;
+    top: 0;
+    background: none;
+    height: 0;
+    width: 100%;
+    z-index: 5;
+}
+.header_inner{
+    background: rgba(255, 206, 50, 1);
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    transition-property: top, background;
+    transition-duration: 500ms;
+
+}
+#contact{
+    height: calc(100vh - 150px - 200px);
+    margin-top: 150px;
+    background: url(../img/contact_bg.jpg) center center / cover;
+    display: flex;
+    position: relative;
+}
+.contact_wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+.contact_inner{
+    background: rgba(255, 255, 255, 0.7);
+    height: 50vh;
+    padding: 30px;
+    color: #000;
+    display: flex;
+    border-radius: 30px;
+    position: relative;
+    z-index: 3;
+}
+.contact1, .contact2{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+.contact1{
+    padding-right: 30px;
+}
+.contact1::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    height: 60%;
+    border-right: 2px solid #000;
+
+}
+.contact_inner h2{
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+.contact1 h2{
+}
+.contact_inner .contact1 form{
+    font-size: 20px;
+}
+.contact_inner .contact1 form ul{
+    overflow: hidden;
+}
+.contact_inner .contact1 form li{
+    margin-bottom: 10px;
+}
+.contact_inner .contact1 form li span{
+    display: block;
+    width: 100px;
+    float: left;
+    line-height: 27px;
+}
+.contact_inner .contact1 form li input{
+    font-size: 20px;
+    border: 2px dashed #028841;
+    background-color: #fff;
+    font-family: 'jua', sans-serif;
+    width: inherit;
+    height: inherit;
+}
+.contact_inner .contact1 form li input:focus{
+    outline: none;
+}
+.contact_inner .contact1 form li:nth-of-type(3) textarea{
+    font-size: 20px;
+    border: 2px dashed #028841;
+    background-color: #fff;
+    font-family: 'jua', sans-serif;
+    width: inherit;
+    height: inherit;
+    resize: none;
+    
+    width: 100%;
+    margin: 0 auto;
+    height: 20vh;
+    outline: none;
+}
+.contact_inner .contact1 form li:nth-of-type(4) input{
+    float: right;
+
+    border-radius: 15px;
+    height: 40px;
+    padding: 0 10px;
+    line-height: 40px;
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+
+.contact_inner .contact2{
+    padding-left: 30px;
+
+    
+}
+
+.contact_inner .contact2 ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%
+}
+.contact_inner .contact2 .qna li{
+    margin: 10px 0 10px;
+}
+.contact_inner .contact2 .qna a{
+    font-size: 30px;
+    transition: 300ms;
+    line-height: 33px;
+}
+.contact_inner .contact2 .qna a:hover{
+    color: #FFCE32;
+    text-shadow: 2px 2px 0px #000;
+}
+.contact_inner .contact2 .qna strong{
+    font-size: 38px;
+    color: #028841;
+    text-shadow: 2px 2px 0px #000;
+}
+
+footer{
+    margin-top: 0px;
+    background: #FFCE32;
+    padding-bottom: 70px;
+    height: 200px;
+    position: relative;
+}
+.footer_container{
+}
+.footer_container .footer_text{
+    padding-top: 0px;
+
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.footer_container h1{
+    color: #fff;
+}
+.footer_container p{
+    color: #fff;
+}
+.footer_container p > span{
+    display: block;
+}
+.footer_container .footer_bg{
+    position: absolute;
+    background: #FFCE32;
+    height: 0px;
+    width: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    border-left: 100px solid #FFCE32;
+    border-bottom: 200px solid #028841;
+}
+.footer_container .footer_green{
+    position: absolute;
+    right: 0;
+    width: calc(50% - 50px);
+    height: 200px;
+    background: #028841;
+    
+}
+
+
