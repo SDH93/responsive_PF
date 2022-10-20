@@ -97,6 +97,8 @@
     font-family: 'jua', sans-serif;
     width: inherit;
     height: inherit;
+    border-radius: 5px;
+
 }
 .contact_inner .contact1 form li input:focus{
     outline: none;
@@ -108,6 +110,7 @@
     font-family: 'jua', sans-serif;
     width: inherit;
     height: inherit;
+    border-radius: 15px;
     resize: none;
     
     width: 100%;
@@ -123,6 +126,8 @@
     padding: 0 10px;
     line-height: 40px;
     font-size: 20px;
+    color: #000;
+    text-align: center;
 
     cursor: pointer;
 }
