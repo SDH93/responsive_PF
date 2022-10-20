@@ -371,15 +371,17 @@
     .contact_inner .contact1 form li:nth-of-type(3) textarea{
         height: 25vh;
     }
-    .contact_inner .contact1 form li:nth-of-type(4) input{
+    .contact_inner .contact1 form li:nth-of-type(4) button{
         float: initial;
         width: 30%;
+        min-width: 100px;
         margin-left: 50%;
         transform: translate(-50%);
         font-size: 14px;
         height: 34px;
         line-height: 34px;
         padding: 0 5px;
+        
 
     }
     .contact_inner .contact2{

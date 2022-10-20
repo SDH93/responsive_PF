@@ -118,7 +118,15 @@
     height: 20vh;
     outline: none;
 }
-.contact_inner .contact1 form li:nth-of-type(4) input{
+.contact_inner .contact1 form li:nth-of-type(4) button{
+    font-size: 20px;
+    border: 2px dashed #028841;
+    background-color: #fff;
+    font-family: 'jua', sans-serif;
+    width: inherit;
+    height: inherit;
+    border-radius: 5px;
+
     float: right;
 
     border-radius: 15px;

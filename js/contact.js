@@ -7,7 +7,7 @@ newDiv.setAttribute('id','popup'); //만들어진 요소에 속성, 속성값을
 const inputName = document.querySelector('.contact1 input#name');
 const inputPhone = document.querySelector('.contact1 input#phone');
 const inputText = document.querySelector('.contact1 textarea');
-const btnSend = document.querySelector('.contact1 li:nth-of-type(4) input');
+const btnSend = document.querySelector('.contact1 li:nth-of-type(4) button');
 
 btnSend.onclick = function(e){
     e.preventDefault();
